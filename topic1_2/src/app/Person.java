@@ -7,7 +7,7 @@ package app;
  */
 public class Person {
 	/**
-	 * 
+	 * This person's age
 	 */
 	private int age;
 	/**
@@ -18,6 +18,18 @@ public class Person {
 	 * This person's weight
 	 */
 	private float weight;
+	
+	/**
+	 * constructs a Person with given age, name, and weight
+	 * @param age the age of person to set
+	 * @param name the name of person to set
+	 * @param weight the weight of person to set
+	 */
+	public Person(int age, String name, float weight) {
+		this.age = age;
+		this.name = name;
+		this.weight = weight;
+	}
 	
 	/**
 	 * Returns the age
@@ -64,18 +76,6 @@ public class Person {
 	 * @param weight the weight to set
 	 */
 	public void setWeight(float weight) {
-		this.weight = weight;
-	}
-	
-	/**
-	 * @param age the age of person to set
-	 * @param name the name of person to set
-	 * @param weight the weight of person to set
-	 */
-	public Person(int age, String name, float weight) {
-		super();
-		this.age = age;
-		this.name = name;
 		this.weight = weight;
 	}
 	
